@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Mr+Dafoe|Niconne|Norican');
+/* 
+    font-family: 'Norican', cursive;
+    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Niconne', cursive;
+    font-family: 'Lobster', cursive;    
+*/
+
+/* Core Styles */
+body {
+    margin: 0;
+    font-family: Ariel, Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img,
+#showcase,
+#main
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #914cbe;
+}
+
+a:hover {
+    color: #ddd
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Showcase */
+
+#showcase {
+    min-height: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .logo {
+    width: 400px;
+    height: auto;
+    padding: 25px;
+    margin: 20px
+}
+
+#showcase h1 {
+    display: none;
+    font-family: 'Norican', cursive;
+}
+
+#showcase .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px auto 0;
+    align-items: center;
+}
+
+
+#nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+#showcase .bg-image {
+    position: absolute;
+    background: #333 url('img/billboard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#showcase .content-wrap,
+#schedule .content-wrap {
+    padding: 0 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav a {
+  color: #ededed
+}
+
+#nav a:hover {
+    color: #000;
+  }
+
+
+
+
+
+
+
+
+
+/* Schedule */
+
+#schedule .calendar {
+    display: none;
+}
+
+#schedule {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .bg {
+    background-image: url("./img/starstar.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 200, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+  
+  img {
+    display: block;
+  }
+  
+  .day-1 { color: #F0B95C; }
+  .day-2 { color: #4DAB8F; }
+  .day-3 { color: #5CBDC7; }
+  .day-4 { color: #28858A; }
+  .day-5 { color: #2D4365; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    
+    
+    
+    ul.main { 
+      list-style: none;
+      max-width: 75%;
+      margin: 20px auto;
+    }
+    h3 {padding: 0; margin: 0;}
+    
+    
+    .date {
+      width: 17%;
+      padding: 15% 1% 0 0 ;
+      float: left;
+    }
+    
+    .date h3 {
+      font-size: 1.5em;
+    }
+    
+    .date p {
+      font-size: .8em;
+    }
+    
+    .events {
+      float: left;
+      width: 80%;
+      border-left: 1px solid #ccc;
+      margin-top: 10%;
+      padding-top: 3%;
+    }
+    
+    .events-detail {
+      max-width: 550px;
+    }
+    
+    .events-detail li{
+      padding: 10px;
+      border-bottom: 1px dashed #ccc;
+      line-height: 22px;
+      transition: ease .4s all;
+    }
+    
+    .events-detail li:hover {
+      background: #e9e9e9;
+    }
+    
+    .event-time {
+      font-weight: 900;
+    }
+    
+    .events-detail li a {
+      text-decoration: none;
+      color: #444;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    
+    .event-description {
+        font-size: .8em;
+        color: #333;
+        /* margin-left: 70px; */
+    }
+
+    /* Tooltip  */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 300px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+    
+    
+    
+    @media all and (max-width: 641px) {
+        .date {
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 10px;
+        }
+      
+      .events {
+        border:none;
+        width: 100%;
+        margin-top: 0;
+      }
+      
+      .events-detail {
+        padding: 0;
+      }
+      
+      li.date p {
+        margin:0;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Icons */
+
+
+#icon {
+    background-color: #fff;
+    margin: 25px;
+    padding: 25px 10px 0;
+}
+#icon img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+
+
+#icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#icon li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+
+/* Past Productions */
+#past-products {
+    margin: 45px;
+}
+
+#past-products .content-title {
+    color: #fff;
+    padding-bottom: 0;
+}
+
+#past-products ul {
+    padding: 20px;
+    display: grid;
+    
+    grid-column-gap: 10px;
+}
+
+#past-products img {
+    width: 350px;
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* About / Boxes  */
+
+#about .box {
+    padding: 2em;
+    color: #fff;
+    background: linear-gradient(#eaeaea, #333);
+}
+
+#about .box:nth-child(2) {
+    background: linear-gradient(#333, #C4A872);
+    color: #000000
+}
+
+.content-title {
+    color: #444;
+}
+
+.burning-man .content-title {
+    color: #C4A872;
+}
+/* Footer */
+
+#main-footer {
+    display: block;
+    height: auto;
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Media Queries */
+/* These rules come into effect with larger screens */
+@media(min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    #showcase .container {
+        display: grid;
+        margin: 0 auto;
+    }
+    
+    #showcase h1 {
+        display: block;
+    }
+
+    #showcase .logo {
+        width: 250px;
+    }
+
+    #schedule .small {
+        display: none;
+    }
+
+    #nav {
+        grid-column-start: 3;
+        padding: 20px;
+    }
+
+    #schedule .content-text p {
+        padding-top: 0;
+    }
+
+    .content-wrap,
+    #icon ul {
+        grid-column: 2/4;
+    }
+
+    #schedule .content-wrap {
+        display: grid;
+        grid-column: 1/-1;
+    }
+
+    #schedule .calendar {
+        display: grid;
+        margin: auto;
+    }
+
+    .box, #main-footer div {
+        grid-column: span 2;
+        margin-bottom: 0;
+    }
+
+    section #icon .grid {
+        grid-column: 1/-1;
+    }
+
+    #icon {
+        display: grid;
+        background-color: #fff;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    #icon ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #icon li {
+        width: 31%;
+    }
+
+    #nav ul {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #past-products img {
+        max-width: 200px;
+        margin: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #past-products span {
+        display: block;
+    }
+    
+
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+:root {
+  font-size: 12px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.grid {
+  max-width: 100rem;
+  margin: 10px auto;
+  padding: 10px;
+}
+.title {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  flex: 1 0 24rem;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-height: 250px;
+  font-size: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.post:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.post__toolbar {
+  position: relative;
+}
+.post__toolbar .material-icons {
+  position: absolute;
+  color: #fff;
+  padding: .5rem;
+  right: 15px;
+  top: 12px;
+}
+.post__toolbar .material-icons:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: .5rem;
+  transition: background .4s;
+}
+.post__content {
+  padding: 1rem;
+}
+.post__content--title {
+  font-size: 2rem;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post__content--body {
+  color: #999;
+  font-size: 1rem;
+}
+@supports (display: grid) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .post {
+    margin: 0;
+  }
+}
